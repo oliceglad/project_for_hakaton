@@ -14,11 +14,16 @@
 
 <h3>Information for all employees</h3>
 
-<input type="button" value="Salary"
-       onclick="window.location.href = 'hr_info'">
 
+<security:authorize access="hasRole('HR')">
+
+    <input type="button" value="Salary"
+           onclick="window.location.href = 'hr_info'">
+</security:authorize>
+
+<security:authorize access="hasRole('Manager')">
 <input type="button" value="Performance"
        onclick="window.location.href = 'manager_info'">
-
+</security:authorize>
 </body>
 </html>
