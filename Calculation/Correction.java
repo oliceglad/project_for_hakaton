@@ -1,9 +1,6 @@
-package Calculation;
-
 public class Correction {
 
-    int CoA = 1;
-    int CoO;
+
 
 
     CorFloor corFloor = new CorFloor();
@@ -16,5 +13,8 @@ public class Correction {
 
     double cor = corFloor.Corvalue + corSquareFlat.FlatValue + corSquareKitchen.KitchenValue + corBalcony.BalconyValue + corMetro.DistanceValue + corTrade.TradeValue;
 
-    CoO = CoA * (1 + cor) / 100;
+    int CoA = 1;
+    double CoO = CoA * (1 + cor) / 100;;
+
+
 }
