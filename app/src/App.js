@@ -14,10 +14,11 @@ render() {
     <div className='container'>
       <Header/>
       <div className='main'>
-        {/* <Auth/> */}
-        <Main/>
+        <Auth/>
       </div>
+      <Main/>
     </div>
+
   )
 }
 

@@ -63,6 +63,10 @@ export const Main = () => {
                     </label>
                 </li>
             </ul>
+
+            <button type='submit' className={f.form__button}>
+                Рассчитать
+            </button>
         </form>
     )
 }
