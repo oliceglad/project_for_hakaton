@@ -8,7 +8,7 @@ export const Main = () => {
     const [valueInput, setvalueInput] = useState('');
 
     return (
-        <div className="container">
+        <div className={f.container}>
             <form className={f.form}>
                 <input type="file" className={f.form__file} />
                 <input type="text" placeholder='Введите местоположение' className={f.form__location} value={valueInput} onChange={(e) => setvalueInput(e.target.value)} />
@@ -84,8 +84,26 @@ export const Main = () => {
                     <div className={f.output__map__title}>
                         Найдено несколько аналогов:
                     </div>
-                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Samara+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    <iframe className={f.output__map__map} width="100%" height="400" frameborder="0" scrolling="no" marginHeight="0" marginWidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Samara+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                 </div>
+
+                <label className={f.output__map__check} for='corrector10'>
+                    <input type="checkbox" id='corrector10'/>
+                    <span>Учитывать подобранные аналоги</span>
+                </label>
+
+                <div className={f.output__cost}>
+                    <div className={f.output__cost_title}>
+                        Расчетная стоимость
+                    </div>
+                    <div className={f.output__cost__info}>
+                        25,4млн рублей 
+                    </div>
+                </div>
+
+                <a href="##" className={f.output__button}>
+                    Экспорт таблицы
+                </a>
             </div>
         </div>
     )

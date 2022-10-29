@@ -6,16 +6,11 @@
 body {
   font-family: 'Montserrat';
   margin: 0;
-  height: 100%;
-  background-image: url('Images/background.jpg');
-  // background-position-y: -250px;
-  background-position-x: 600px;
-
-  @media(min-width: 540px) {
-    background-position-y: top;
-    background-position-x: right;
-    background-repeat: no-repeat;
-  }
+  width: 100%;
+  background-image: url('Images/background.png');
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: right;
 }
 
 ul {
@@ -65,10 +60,10 @@ a {
     padding-right: 40px;
   }
 
-  @media (min-width: 1260px) {
-    padding-left: 117px;
-    padding-right: 117px;
-  }
+  // @media (min-width: 1260px) {
+  //   padding-left: 117px;
+  //   padding-right: 117px;
+  // }
 }
 
 .main {

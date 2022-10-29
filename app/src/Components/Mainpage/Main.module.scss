@@ -11,8 +11,6 @@ $sec-color: #06060680;
   padding: 13px 29px 13px 29px;
 }
 
-
-
 @mixin input() {
     background-color: transparent;
     padding-bottom: 10px;
@@ -25,6 +23,14 @@ $sec-color: #06060680;
 
     &::placeholder {
         color: white;
+    }
+}
+
+.container {
+    @media(min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
@@ -84,6 +90,14 @@ $sec-color: #06060680;
         font-weight: 400;
         font-size: 20px;
     }
+    
+    @media(min-width:768px) {
+        &__button {
+            display: inline-block;
+            margin: unset;
+            margin-top: 76px;
+        }
+    }
 }
 
 .output {
@@ -114,9 +128,67 @@ $sec-color: #06060680;
         }
 
         &__title {
+            margin-bottom: 10px;
             font-weight: 400;
             font-size: 20px;
             color: #FFFFFF;
+        }
+
+        &__check {
+            margin-top: 7px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #EAEAEA;
+        }
+    }
+
+    &__cost {
+        margin-top: 35px;
+        color: white;
+        text-align: center;
+
+        &__title {
+            font-weight: 400;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+
+        &__info {
+            font-weight: 700;
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+    }
+
+    &__button {
+        @include button($main-color);
+        display: block;
+        margin: 0 auto;
+        width: 291px;
+        height: 55px;
+        margin-top: 78px;
+        margin-bottom: 70px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    @media(min-width: 768px) {
+        padding: 24px 49px 24px 49px ;
+        background: rgba(3, 3, 5, 0.5);
+        border-radius: 10px;
+
+        &__button {
+            margin-top: 35px;
+            margin-bottom: 0px;
+        }
+    }
+
+    @media(min-width: 1100px) {
+        &__map {
+            &__map {
+                min-width: 500px;
+                height: 300px;
+            }
         }
     }
 }
