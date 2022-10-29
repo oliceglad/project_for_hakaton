@@ -1,0 +1,87 @@
+$main-color: rgba(34, 70, 190, 0.8);
+$sec-color: #06060680;
+
+@mixin button($main-color) {
+  display: inline-block;
+  width: min-content;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  background-color: $main-color;
+  padding: 13px 29px 13px 29px;
+}
+
+
+
+@mixin input() {
+    background-color: transparent;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+
+    &::placeholder {
+        color: white;
+    }
+}
+
+.form {
+    margin-top: 34px;
+    &__file {
+        background: rgba(6, 6, 6, 0.5);
+    }
+
+    &__location {
+        width: 100%;
+        margin-top: 43px;
+        @include input()
+    }
+
+    &__mainradio {
+
+        span {
+            margin-left: 7px;
+        }
+
+        display: block;
+        margin-top: 23px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #EAEAEA;
+    }
+
+
+    &__title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+    &__correctors {
+        &__item {
+            span {
+                margin-left: 6px;
+            }
+            display: block;
+            margin-top: 9px;
+            font-weight: 500;
+            font-size: 14px;
+            color: #EAEAEA;
+        }
+    }
+
+    &__button {
+        @include button($main-color);
+        width: 291px;
+        height: 55px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
