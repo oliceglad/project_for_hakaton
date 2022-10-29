@@ -85,3 +85,38 @@ $sec-color: #06060680;
         font-size: 20px;
     }
 }
+
+.output {
+    margin-top: 38px;
+    &__address {
+        color: white;
+
+        &__title {
+            font-weight: 400;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+
+        &__info {
+            margin-top: 9px;
+            font-weight: 700;
+            font-size: 24px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    }
+
+    &__map {
+        margin-top: 20px;
+
+        &__component {
+            width: 100%;
+        }
+
+        &__title {
+            font-weight: 400;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+    }
+}
