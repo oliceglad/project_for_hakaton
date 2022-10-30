@@ -11,6 +11,11 @@ body {
   background-repeat: no-repeat;
   background-position-y: top;
   background-position-x: right;
+
+  @media (min-width: 320px) {
+    background-position-y: top;
+    background-position-x: 70%;
+  }
 }
 
 ul {
@@ -50,6 +55,10 @@ a {
   text-decoration: none;
 }
 
+label {
+  cursor: pointer;
+}
+
 .container {
   padding-left: 11px;
   padding-right: 11px;
@@ -60,10 +69,10 @@ a {
     padding-right: 40px;
   }
 
-  // @media (min-width: 1260px) {
-  //   padding-left: 117px;
-  //   padding-right: 117px;
-  // }
+  @media (min-width: 1700px) {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
 }
 
 .main {

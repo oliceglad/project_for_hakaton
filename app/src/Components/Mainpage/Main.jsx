@@ -10,10 +10,15 @@ export const Main = () => {
     return (
         <div className={f.container}>
             <form className={f.form}>
-                <input type="file" className={f.form__file} />
+                <div className={f.form__input__wrapper}>
+                    <input type="file" className={f.form__file} id='file' />
+                    <label for='file' className={f.form__file__style}>
+                       <span className={f.form__file__style__span}>Добавьте таблицу Excel </span> 
+                    </label>
+                </div>
                 <input type="text" placeholder='Введите местоположение' className={f.form__location} value={valueInput} onChange={(e) => setvalueInput(e.target.value)} />
                 <label className={f.form__mainradio} for='corrector'>
-                    <input type="checkbox" id='corrector' checked={valueCheck} onChange={() => setValueCheck(!valueCheck)} />
+                    <input className={f.form__mainradio__check} type="checkbox" id='corrector' checked={valueCheck} onChange={() => setValueCheck(!valueCheck)} />
                     <span>Учитывать корректировки</span>
                 </label>
                 <div className={f.form__title}>Корректировки: </div>
@@ -21,46 +26,46 @@ export const Main = () => {
                 <ul style={valueCheck ? { opacity: "1" } : { opacity: ".5" }}>
                     <li className={f.form__correctors__item}>
                         <label className={f.form__correctors__item__label} for='corrector1'>
-                            <input type="checkbox" id='corrector1' disabled={valueCheck ? false : true} />
+                            <input type="checkbox" id='corrector1' disabled={valueCheck ? false : true} className={f.form__mainradio__check} />
                             <span>Корректировка на торг</span>
                         </label>
                     </li>
                     <li className={f.form__correctors__item}>
                         <label className={f.form__correctors__item__label} for='corrector2'>
-                            <input type="checkbox" id='corrector2' disabled={valueCheck ? false : true} />
+                            <input type="checkbox" id='corrector2' disabled={valueCheck ? false : true} className={f.form__mainradio__check}/>
                             <span>Корректировка на этаж расположения
                                 квартиры </span>
                         </label>
                     </li>
                     <li className={f.form__correctors__item}>
                         <label className={f.form__correctors__item__label} for='corrector3'>
-                            <input type="checkbox" id='corrector3' disabled={valueCheck ? false : true} />
+                            <input type="checkbox" id='corrector3' disabled={valueCheck ? false : true} className={f.form__mainradio__check}/>
                             <span>Корректировка на площадь квартиры</span>
                         </label>
                     </li>
                     <li className={f.form__correctors__item}>
                         <label className={f.form__correctors__item__label} for='corrector4'>
-                            <input type="checkbox" id='corrector4' disabled={valueCheck ? false : true} />
+                            <input type="checkbox" id='corrector4' disabled={valueCheck ? false : true} className={f.form__mainradio__check}/>
                             <span>Корректировка на площадь кухни</span>
                         </label>
                     </li>
                     <li className={f.form__correctors__item}>
                         <label className={f.form__correctors__item__label} for='corrector5'>
-                            <input type="checkbox" id='corrector5' disabled={valueCheck ? false : true} />
+                            <input type="checkbox" id='corrector5' disabled={valueCheck ? false : true} className={f.form__mainradio__check}/>
                             <span>Корректировка на наличие
                                 балкона / лоджии</span>
                         </label>
                     </li>
                     <li className={f.form__correctors__item}>
                         <label className={f.form__correctors__item__label} for='corrector6'>
-                            <input type="checkbox" id='corrector6' disabled={valueCheck ? false : true} />
+                            <input type="checkbox" id='corrector6' disabled={valueCheck ? false : true} className={f.form__mainradio__check}/>
                             <span> Корректировка на удаленность
                                 от станции метро</span>
                         </label>
                     </li>
                     <li className={f.form__correctors__item}>
                         <label className={f.form__correctors__item__label} for='corrector7'>
-                            <input type="checkbox" id='corrector7' disabled={valueCheck ? false : true} />
+                            <input type="checkbox" id='corrector7' disabled={valueCheck ? false : true} className={f.form__mainradio__check}/>
                             <span>Корректировка на состояние отделки </span>
                         </label>
                     </li>
@@ -88,7 +93,7 @@ export const Main = () => {
                 </div>
 
                 <label className={f.output__map__check} for='corrector10'>
-                    <input type="checkbox" id='corrector10'/>
+                    <input type="checkbox" id='corrector10' className={f.form__mainradio__check}/>
                     <span>Учитывать подобранные аналоги</span>
                 </label>
 
@@ -97,7 +102,7 @@ export const Main = () => {
                         Расчетная стоимость
                     </div>
                     <div className={f.output__cost__info}>
-                        25,4млн рублей 
+                        25,4млн рублей
                     </div>
                 </div>
 
