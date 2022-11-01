@@ -1,12 +1,22 @@
 import React, {useState} from 'react';
 import a from './Auth.module.scss';
 
-export const Auth = () => {
+export const Auth = ({isAuth}) => {
     const [title, setTitle] = useState('')
-
+    const [titleTwo, setTitleNew] = useState('')
 
     function handleSubmit(e) {
-        console.log(title);
+
+        const dictions = {
+            login: "admin",
+            password: "123"
+        }
+
+        if (title == dictions.login && titleTwo === dictions.password) {
+            isAuth = true;
+        }
+
+        return isAuth
     }
 
     return (
@@ -22,6 +32,8 @@ export const Auth = () => {
                 placeholder="Пароль"
                 className={a.auth__form__input}
                 type="text"
+                value={titleTwo}
+                onChange={event => setTitleNew(event.target.value)}
             />
             <button type="submit" className={a.auth__form__button} onClick={handleSubmit}>
                 Войти
