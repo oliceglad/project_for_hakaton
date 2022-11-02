@@ -11,6 +11,7 @@ body {
   background-repeat: no-repeat;
   background-position-y: top;
   background-position-x: right;
+  padding-bottom: 20px;
 
   @media (min-width: 320px) {
     background-position-y: top;
@@ -82,4 +83,8 @@ label {
     justify-content: center;
     align-items: center;
   }
+}
+
+.ymaps-2-1-79-map:not(:last-child) {
+  display: none !important;
 }

@@ -251,6 +251,7 @@ $sec-color: #06060680;
     @media(min-width: 1100px) {
         &__map {
             &__map {
+                width: 100%;
                 min-width: 500px;
                 height: 300px;
             }

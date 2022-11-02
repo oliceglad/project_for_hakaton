@@ -1,17 +1,17 @@
-import React, {useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
 import { Header } from './Components/Header/Header';
 import { Main } from './Components/Mainpage/Main';
-import a from '././/Components/Auth/Auth.module.scss';
 import { Auth } from './Components/Auth/Auth';
 
 function App() {
+  // localStorage.removeItem('isAuth')
   if (!localStorage.getItem('isAuth')) {
     return (
       <div className='container'>
         <Header />
         <div className='main'>
-          <Auth/>
+          <Auth />
         </div>
       </div>
 
