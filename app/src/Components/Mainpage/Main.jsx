@@ -21,8 +21,9 @@ export const Main = () => {
           <label for='file' className={f.form__file__style}>
             <span className={f.form__file__style__span}>{valueFile ? valueFile : 'Добавьте файл Excel'}</span>
           </label>
+          {valueFile ? <span style={{color:'white'}}>Успешно!</span>: <></>}
         </div>
-        <input type="text" placeholder='Введите местоположение' className={f.form__location} value={valueInput} onChange={(e) => setvalueInput(e.target.value)} />
+        <input type="text" placeholder='Введите адрес' className={f.form__location} value={valueInput} onChange={(e) => setvalueInput(e.target.value)}/>
         <label className={f.form__mainradio} for='corrector'>
           <input className={f.form__mainradio__check} type="checkbox" id='corrector' checked={valueCheck} onChange={() => setValueCheck(!valueCheck)} />
           <span>Учитывать корректировки</span>
@@ -77,7 +78,7 @@ export const Main = () => {
           </li>
         </ul>
 
-        <button type='submit' className={f.form__button}>
+        <button type='button' className={f.form__button}>
           Рассчитать
         </button>
       </form>
@@ -124,7 +125,7 @@ export const Main = () => {
           </div>
         </div>
 
-        <a href="##" className={f.output__button}>
+        <a href="##" download className={f.output__button}>
           Экспорт таблицы
         </a>
       </div>
