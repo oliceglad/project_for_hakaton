@@ -12,253 +12,292 @@ $sec-color: #06060680;
 }
 
 @mixin input() {
-    background-color: transparent;
-    padding-bottom: 10px;
-    border-bottom: 2px solid white;
-    color: white;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 14px;
-    color: #FFFFFF;
+  background-color: transparent;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
 
-    &::placeholder {
-        color: white;
-    }
+  &::placeholder {
+    color: white;
+  }
 }
 
 .container {
-    @media(min-width: 992px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
+  @media(min-width: 992px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .form {
-    margin-top: 30px;
-    &__file {
-        min-width: 354px;
-        height: 114px;
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
+  margin-top: 30px;
 
-        &__style {
-            display: inline-block;
-            width: 100%;
-            text-align: center;
-            cursor: pointer;
-            padding: 48px 64px;
-            background-color: rgba(6, 6, 6, 0.5);
-            border: 1px dashed #000000;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 10px;
+  &__file {
+    min-width: 354px;
+    height: 114px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
 
-            @media(min-width:1200px) {
-                border: 3px dashed #000000;
-            }
+    &__style {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+      padding: 48px 64px;
+      background-color: rgba(6, 6, 6, 0.5);
+      border: 1px dashed #000000;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
 
-            &__span {
-                font-size: 16px;
-                line-height: 20px;
-                color: #FFFFFF
-            }
-        }
-    }
+      @media(min-width:1200px) {
+        border: 3px dashed #000000;
+      }
 
-    &__location {
-        width: 100%;
-        margin-top: 20px;
-        @include input()
-    }
-
-    &__mainradio {
-
-        &__check {
-            position: absolute;
-            z-index: -1;
-            opacity: 0;
-
-            &:checked {
-                +span {
-                    &::before {
-                        border-color: #0b76ef;
-                        background-color: #0b76ef;
-                    }
-                }
-            }
-
-            +span {
-                display: inline-flex;
-                align-items: center;
-                user-select: none;
-
-                &::before {
-                    content: '';
-                    display: inline-block;
-                    width: 10px;
-                    height: 10px;
-                    flex-shrink: 0;
-                    flex-grow: 0;
-                    border: 1px solid #adb5bd;
-                    background-color: white;
-                    border-radius: 10px;
-                    margin-right: 0.5em;
-                }
-            }
-        }
-
+      &__span {
         display: block;
-        margin-top: 23px;
-        font-weight: 500;
         font-size: 16px;
-        color: #EAEAEA;
-    }
-
-
-    &__title {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 20px;
+        line-height: 20px;
         color: #FFFFFF;
-    }
+        transition: all .3s ease-in-out;
+      }
 
-    &__correctors {
-        &__item {
-            display: block;
-            margin-top: 9px;
-            font-weight: 500;
-            font-size: 14px;
-            color: #EAEAEA;
+      &:hover,
+      &:active,
+      &:focus-visible {
+        .form__file__style__span {
+          transform: scale(1.1);
         }
+      }
+
+    }
+  }
+
+  &__location {
+    width: 100%;
+    margin-top: 20px;
+    @include input();
+    transition: all .3s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus-visible {
+      border-bottom: 2px solid $main-color;
+    }
+  }
+
+  &__mainradio {
+
+    &__check {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+
+      &:checked {
+        +span {
+          &::before {
+            border-color: #0b76ef;
+            background-color: #0b76ef;
+          }
+        }
+      }
+
+      +span {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          flex-shrink: 0;
+          flex-grow: 0;
+          border: 1px solid #adb5bd;
+          background-color: white;
+          border-radius: 10px;
+          margin-right: 0.5em;
+        }
+      }
     }
 
+    display: block;
+    margin-top: 23px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #EAEAEA;
+  }
+
+
+  &__title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+
+  &__correctors {
+    &__item {
+      display: block;
+      margin-top: 9px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #EAEAEA;
+    }
+  }
+
+  &__button {
+    @include button($main-color);
+    width: 291px;
+    height: 55px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    border: 1px solid $main-color;
+    transition: all .3s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus-visible {
+      background-color: transparent;
+      border: 1px solid white;
+    }
+  }
+
+  @media(min-width:768px) {
     &__button {
-        @include button($main-color);
-        width: 291px;
-        height: 55px;
-        display: block;
-        margin: 0 auto;
-        margin-top: 40px;
-        font-weight: 400;
-        font-size: 20px;
+      display: inline-block;
+      margin: unset;
+      margin-top: 76px;
     }
-    
-    @media(min-width:768px) {
-        &__button {
-            display: inline-block;
-            margin: unset;
-            margin-top: 76px;
-        }
-    }
+  }
 
-    @media(min-width:1700px) {
-        &__file {
-            &__style {
-                padding: 60px 135px;
-                &__span {
-                    font-size: 36px;
-                }
-            }
+  @media(min-width:1700px) {
+    &__file {
+      &__style {
+        padding: 60px 135px;
+
+        &__span {
+          font-size: 36px;
         }
+      }
     }
+  }
 }
 
 .output {
-    margin-top: 38px;
-    &__address {
-        color: white;
+  margin-top: 38px;
 
-        &__title {
-            font-weight: 400;
-            font-size: 20px;
-            color: #FFFFFF;
-        }
+  &__address {
+    color: white;
 
-        &__info {
-            margin-top: 9px;
-            font-weight: 700;
-            font-size: 24px;
-            color: #FFFFFF;
-            text-align: center;
-        }
+    &__title {
+      font-weight: 400;
+      font-size: 20px;
+      color: #FFFFFF;
     }
 
-    &__map {
-        margin-top: 20px;
+    &__info {
+      margin-top: 9px;
+      font-weight: 700;
+      font-size: 24px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  }
 
-        &__component {
-            width: 100%;
-        }
+  &__map {
+    margin-top: 20px;
 
-        &__title {
-            margin-bottom: 10px;
-            font-weight: 400;
-            font-size: 20px;
-            color: #FFFFFF;
-        }
-
-        &__check {
-            margin-top: 7px;
-            font-weight: 500;
-            font-size: 16px;
-            color: #EAEAEA;
-        }
+    &__component {
+      width: 100%;
     }
 
-    &__cost {
-        margin-top: 35px;
-        color: white;
-        text-align: center;
-
-        &__title {
-            font-weight: 400;
-            font-size: 20px;
-            color: #FFFFFF;
-        }
-
-        &__info {
-            font-weight: 700;
-            font-size: 24px;
-            color: #FFFFFF;
-        }
+    &__title {
+      margin-bottom: 10px;
+      font-weight: 400;
+      font-size: 20px;
+      color: #FFFFFF;
     }
+
+    &__check {
+      margin-top: 7px;
+      font-weight: 500;
+      font-size: 16px;
+      color: #EAEAEA;
+    }
+  }
+
+  &__cost {
+    margin-top: 35px;
+    color: white;
+    text-align: center;
+
+    &__title {
+      font-weight: 400;
+      font-size: 20px;
+      color: #FFFFFF;
+    }
+
+    &__info {
+      font-weight: 700;
+      font-size: 24px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__button {
+    @include button($main-color);
+    display: block;
+    margin: 0 auto;
+    width: 291px;
+    height: 55px;
+    margin-top: 78px;
+    margin-bottom: 70px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid $main-color;
+    transition: all .3s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus-visible {
+      background-color: transparent;
+      border: 1px solid white;
+    }
+  }
+
+  @media(min-width: 600px) {
+    padding: 24px 49px 24px 49px;
+    background: rgba(3, 3, 5, 0.5);
+    border-radius: 10px;
 
     &__button {
-        @include button($main-color);
-        display: block;
-        margin: 0 auto;
-        width: 291px;
-        height: 55px;
-        margin-top: 78px;
-        margin-bottom: 70px;
-        font-size: 20px;
-        text-align: center;
+      margin-top: 35px;
+      margin-bottom: 0px;
     }
+  }
 
-    @media(min-width: 600px) {
-        padding: 24px 49px 24px 49px ;
-        background: rgba(3, 3, 5, 0.5);
-        border-radius: 10px;
+  @media(min-width: 992px) {
+    margin-top: 30px;
+  }
 
-        &__button {
-            margin-top: 35px;
-            margin-bottom: 0px;
-        }
+  @media(min-width: 1100px) {
+    &__map {
+      &__map {
+        width: 100%;
+        min-width: 500px;
+        height: 300px;
+      }
     }
-
-    @media(min-width: 992px) {
-        margin-top: 30px;
-    }
-
-    @media(min-width: 1100px) {
-        &__map {
-            &__map {
-                width: 100%;
-                min-width: 500px;
-                height: 300px;
-            }
-        }
-    }
+  }
 }

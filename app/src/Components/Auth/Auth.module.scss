@@ -36,10 +36,15 @@ $sec-color: #06060680;
   
       &__input {
         @include input();
+        transition: all .3s ease-in-out;
   
   
         &:first-child {
           margin-bottom: 30px
+        }
+
+        &:hover, &:active, &:focus-visible{
+          border-bottom: 2px solid $main-color;
         }
       }
   
@@ -48,6 +53,12 @@ $sec-color: #06060680;
         @include button($main-color);
         font-size: 15px;
         line-height: 18px;
+        transition: all .3s ease-in-out;
+
+
+        &:hover, &:active, &:focus-visible{
+          opacity: .7;
+        }
       }
     }
   

@@ -102,8 +102,8 @@ export const Main = () => {
                 center: [55.751574, 37.573856],
                 zoom: 10,
               }} className={f.output__map__map}>
-                <Placemark geometry={[54.684758, 37.738521]} />
-                <Placemark geometry={[53.684744, 37.738431]} />
+                <Placemark geometry={[55.684758, 37.738521]} />
+                <Placemark geometry={[55.684744, 37.738431]} />
                 <Placemark geometry={[55.684333, 37.733521]} />
               </Map>
             </YMaps>
