@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {  useState, useEffect } from 'react';
 import a from './Auth.module.scss';
 
 export const Auth = () => {
@@ -20,12 +20,14 @@ export const Auth = () => {
   }
 
   function handleSubmit() {
-
-    if (title === dictions.login && titleTwo === dictions.password) {
+    if (title === dictions.login && titleTwo=== dictions.password) {
       setIsAuth(true)
-    }
+      addToStorage()
+    } 
 
-    addToStorage()
+    
+    console.log(isAuth)
+
     return isAuth
   }
 
