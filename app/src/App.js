@@ -1,8 +1,7 @@
-import React, {useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
 import { Header } from './Components/Header/Header';
 import { Main } from './Components/Mainpage/Main';
-import a from '././/Components/Auth/Auth.module.scss';
 import { Auth } from './Components/Auth/Auth';
 
 function App() {
