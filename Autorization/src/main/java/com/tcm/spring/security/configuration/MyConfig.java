@@ -11,6 +11,11 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import javax.sql.DataSource;
 import javax.sql.PooledConnection;
 import java.beans.PropertyVetoException;
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 
 @Configuration
@@ -19,7 +24,7 @@ import java.beans.PropertyVetoException;
 
 public class MyConfig {
     @Bean
-    public ViewResolver viewResolver(){
+    public ViewResolver viewResolver() {
         InternalResourceViewResolver internalResourceViewResolver =
                 new InternalResourceViewResolver();
         internalResourceViewResolver.setPrefix("/WEB-INF/view/");
@@ -27,21 +32,44 @@ public class MyConfig {
         return internalResourceViewResolver;
     }
 
-    @Bean
-    public DataSource dataSource(){
-        ComboPooledDataSource dataSource = new ComboPooledDataSource();
-        try{
-            dataSource.setDriverClass("com.mysql.cj.jdbc.Driver");
-            dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/my_db?useSSL=false");
-            dataSource.setUser("bestuser");
-            dataSource.setPassword("bestuser");
-        }catch (PropertyVetoException e){
-            e.printStackTrace();
-        }
-        return dataSource;
-    }
-
-
+//    @Bean
+//    public DataSource() throws SQLException {
+//        ComboPooledDataSource dataSource = new ComboPooledDataSource();
+//
+//        String USER_NAME = "root";
+//        String PASSWORD = "zhbfszhdgDF%@#%#qSPOKFGPOFG";
+//        String URl = "jdbc:mysql://localhost:3306/mysql";
+//        Statement statement;
+//        Connection connection;
+//
+//
+//        try {
+//            connection = DriverManager.getConnection(URl, USER_NAME, PASSWORD);
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//            throw new RuntimeException();
+//        }
+//        try{
+//            statement = (Statement) connection.createStatement();
+//        }catch (SQLException e){
+//            e.printStackTrace();
+//            throw new RuntimeException();
+//        }
+//
+////        String url = "jdbc:mysql://localhost:3306/users";
+////        String user = "root";
+////        String password = "zhbfszhdgDF%@#%#qSPOKFGPOFG";
+//
+//        try {
+//            dataSource.setDriverClass("org.mysql.Driver"); //loads the jdbc driver
+//            dataSource.setJdbcUrl("jdbc:postgresql://localhost:3306/users");
+//            dataSource.setUser("swaldman");
+//            dataSource.setPassword("test-password");
+//        } catch (PropertyVetoException e) {
+//            e.printStackTrace();
+//        }
+//        return dataSource;
+//    }
 
 
 }

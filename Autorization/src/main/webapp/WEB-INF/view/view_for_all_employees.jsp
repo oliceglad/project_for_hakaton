@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<h3>Information for all employees</h3>
+<h3>Вы успешно авторизировались</h3>
 
 
 <security:authorize access="hasRole('HR')">
