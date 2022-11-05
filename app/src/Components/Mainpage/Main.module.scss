@@ -47,7 +47,7 @@ $sec-color: #06060680;
 
     &__style {
       display: inline-block;
-      width: 100%;
+      max-width: 700px;
       text-align: center;
       cursor: pointer;
       padding: 48px 64px;
