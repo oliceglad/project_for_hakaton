@@ -79,6 +79,22 @@ $sec-color: #06060680;
     }
   }
 
+  &__select {
+    div:first-child {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &__rooms {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    &__square {
+      display: block;
+    }
+  }
+
   &__location {
     width: 100%;
     margin-top: 20px;

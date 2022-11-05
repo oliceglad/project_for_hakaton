@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import f from './Main.module.scss';
 import { YMaps, Map, Placemark } from "react-yandex-maps";
+import Select from 'react-select'
 import axios from 'axios'
 
 export const Main = () => {
@@ -15,6 +16,16 @@ export const Main = () => {
   const [checkBalcon, setCheckBalcon] = useState(false);
   const [checkMetro, setCheckMetro] = useState(false);
   const [checkFinish, setCheckFinish] = useState(false);
+  const [valueFloor, setValueFloor] = useState('');
+  const [valueSquare, setValueSquare] = useState('');
+  const [valueSelect, setValueSelect] = useState(null);
+  const options = [
+    { value: 1, label: 1 },
+    { value: 2, label: 2 },
+    { value: 3, label: 3 },
+    { value: 4, label: 4 },
+    { value: 5, label: 5 }
+  ]
 
 
   const goServer = async () => {
@@ -31,10 +42,13 @@ export const Main = () => {
         params: {
           file: formData,
           address: valueInput,
+          floor: valueFloor,
+          square: valueSquare,
+          rooms: valueSelect,
           correctorBool: valueCheck,
           torg: checkTorg,
-          floor: checkFloor,
-          square: checkS,
+          checkFloor: checkFloor,
+          checkSquare: checkS,
           kitchen: checkSKitchen,
           balcon: checkBalcon,
           metro: checkMetro,
@@ -65,6 +79,18 @@ export const Main = () => {
           </label>
         </div>
         <input type="text" placeholder='Введите адрес' className={f.form__location} value={valueInput} onChange={(e) => setvalueInput(e.target.value)} />
+        <div className={f.form__select}>
+          <div className="square">
+            <input type="text" placeholder='Введите этаж' className={f.form__location} style={{ width: '150px', marginRight: '15px' }} value={valueFloor} onChange={(e) => setValueFloor(e.target.value)} />
+            <div className={f.form__select__square}>
+              <input type="text" placeholder='Введите площадь' className={f.form__location} style={{ width: '150px' }} value={valueSquare} onChange={(e) => setValueSquare(e.target.value)} />
+              <div style={{ fontSize: '10px', color: 'grey' }}>Пример: 85,0</div>
+            </div>
+          </div>
+          <div className={f.form__select__rooms}>
+            <Select options={options} defaultValue={valueSelect} onChange={(e) => setValueSelect(e.value)} placeholder='Кол-во комнат' styles={{ width: 100, }} />
+          </div>
+        </div>
         <label className={f.form__mainradio} for='corrector'>
           <input className={f.form__mainradio__check} type="checkbox" id='corrector' checked={valueCheck} onChange={() => setValueCheck(!valueCheck)} />
           <span>Учитывать корректировки</span>
@@ -162,7 +188,7 @@ export const Main = () => {
             Расчетная стоимость
           </div>
           <div className={f.output__cost__info}>
-            25,4млн рублей
+            12 100 000 рублей
           </div>
         </div>
 
