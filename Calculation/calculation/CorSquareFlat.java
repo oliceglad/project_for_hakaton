@@ -1,3 +1,5 @@
+package com.too_codemen.app.calculation;
+
 import java.security.cert.CertPath;
 
 public class CorSquareFlat {

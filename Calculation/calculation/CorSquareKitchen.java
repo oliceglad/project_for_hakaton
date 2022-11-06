@@ -1,3 +1,5 @@
+package com.too_codemen.app.calculation;
+
 import javax.swing.plaf.IconUIResource;
 
 public class CorSquareKitchen {

@@ -1,3 +1,5 @@
+package com.too_codemen.app.calculation;
+
 public class CorFloor {
 
     int HouseFloor;
