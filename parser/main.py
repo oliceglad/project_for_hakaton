@@ -58,6 +58,19 @@ try:
 
     print(stage_list)
 
+    repair = soup.findAll('ul', class_='opts')
+    repair_list = []
+    repair = list(repair)
+    for item in repair:
+        item = str(item)
+        item = item.split()
+        item[17] = item[17].replace('"', " ", 1)
+        item[17] = item[17].replace('<', " ", 1)
+        repairs_list = item[17].split()
+        repair_list.append(repairs_list[0])
+
+    print(repair_list)
+
 
 except Exception as ex:
     print(ex)
