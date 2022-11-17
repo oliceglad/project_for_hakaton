@@ -177,12 +177,7 @@ export const Main = () => {
           </div>
 
         </div>
-
-        <label className={f.output__map__check} for='corrector10'>
-          <input type="checkbox" id='corrector10' className={f.form__mainradio__check} />
-          <span>Учитывать подобранные аналоги</span>
-        </label>
-
+        
         <div className={f.output__cost}>
           <div className={f.output__cost_title}>
             Расчетная стоимость
