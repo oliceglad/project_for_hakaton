@@ -1,58 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="Authorization:war exploded" />
-    </artifacts-to-build>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f26847f4-3990-40ef-abf2-d2baaddd9f64" name="Changes" comment="add AppDemo">
-      <change afterPath="$PROJECT_DIR$/AppDemo/.idea/artifacts/AppDemo_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/scripts/deploy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/java/com/too_codemen/app/MyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/asset-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/static/css/main.7116a281.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/static/css/main.7116a281.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/static/js/787.c1112931.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/static/js/787.c1112931.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/static/js/main.1fa126b3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/static/js/main.1fa126b3.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/static/js/main.1fa126b3.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/build/static/media/background.efd18856880cba6ea1d1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/ask_emp-detaols-view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/first-view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/show-emp-details-view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AppDemo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/java/com/too_codemen/app/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/Components/Auth/Auth.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/Components/Auth/Auth.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/Components/Auth/Auth.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/Components/Header/Header.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/Components/Header/Header.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/Components/Header/Header.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/view/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AppDemo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    <list default="true" id="12846f5c-f9c0-4467-b5cb-3f6a6d2105cd" name="Changes" comment="get request realise">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/Parser/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/Parser/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/Parser/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/Parser/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/Parser/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/RealtyParser/realtyParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/StandartObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/Transformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tempParsFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/Parser/RealtyParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/RealtyParser/realtyParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/CalculationMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/CalculationMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/Correction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/Correction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/ExcelImport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/ExcelImport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,310 +30,192 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="JpbToolWindowState">
-    <option name="myId2FirstActivated">
-      <map>
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
-      </map>
-    </option>
-    <option name="myId2Visible">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
-      </map>
-    </option>
-  </component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/too_codemen/app/Application.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/CalculationMain.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/CorBalcony.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/CorFloor.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/CorMetro.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/CorSquareKitchen.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/CorTrade.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/Correction.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/ExcelImport.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/RealtyParser/realtyParser.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/StandartObject.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/Test.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/Transformation.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/too_codemen/app/calculation/XlsConvertor.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/tempParsFile.txt" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectId" id="2GjF1CCx1YTasuaxOwDrzB8FPKJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2HBJjrEQVN9sejbKvCSJw50aFGW" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/project_for_hakaton2&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;9cd8a2455b1839ff98ef70c05b9b5983&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/admin/IdeaProjects/project_for_hakaton",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "d8cac0436408e1c80519cbc93dd8f182"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\project_for_hakaton2\AppDemo\src\main\webapp\WEB-INF\view\src" />
-      <recent name="F:\project_for_hakaton2\Calculation" />
-    </key>
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn clean" />
-      <command value="mvn deploy" />
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="Tomcat 9.0.68" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.68" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="Authorization:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/Authorization_war_exploded" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="78948367-5b21-44b8-90d0-0b5c9ba26f41" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="55114" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
+}]]></component>
+  <component name="RunManager" selected="Application.CalculationMain">
+    <configuration name="CalculationMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.too_codemen.app.calculation.CalculationMain" />
+      <module name="AppDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.too_codemen.app.calculation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Authorization:war exploded" />
-        </option>
       </method>
     </configuration>
+    <configuration name="ExcelImport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.too_codemen.app.calculation.ExcelImport" />
+      <module name="AppDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.too_codemen.app.calculation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RealtyParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.too_codemen.app.Parser.RealtyParser" />
+      <module name="AppDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.too_codemen.app.Parser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.too_codemen.app.calculation.Test" />
+      <module name="AppDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.too_codemen.app.calculation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="realtyParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.too_codemen.app.calculation.RealtyParser.realtyParser" />
+      <module name="AppDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.too_codemen.app.calculation.RealtyParser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppDemo" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.CalculationMain" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.ExcelImport" />
+      <item itemvalue="Application.RealtyParser" />
+      <item itemvalue="Application.realtyParser" />
+      <item itemvalue="Maven.AppDemo" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CalculationMain" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.realtyParser" />
+        <item itemvalue="Application.ExcelImport" />
+        <item itemvalue="Application.RealtyParser" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="add war_exploded, web initializer">
-      <created>1666889025149</created>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12846f5c-f9c0-4467-b5cb-3f6a6d2105cd" name="Changes" comment="" />
+      <created>1667752681803</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667752681803</updated>
+      <workItem from="1667752683209" duration="9265000" />
+      <workItem from="1668509057444" duration="804000" />
+      <workItem from="1668510765670" duration="1061000" />
+      <workItem from="1668511840932" duration="21000" />
+      <workItem from="1668516374991" duration="294000" />
+      <workItem from="1668550394212" duration="1392000" />
+      <workItem from="1668589688520" duration="323000" />
+      <workItem from="1668603665536" duration="13000" />
+      <workItem from="1668604885530" duration="102000" />
+      <workItem from="1668611282351" duration="1862000" />
+      <workItem from="1668618558821" duration="16007000" />
+      <workItem from="1668662831405" duration="9405000" />
+    </task>
+    <task id="LOCAL-00001" summary="get request realise">
+      <created>1667758267692</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1666889025150</updated>
+      <updated>1667758267692</updated>
     </task>
-    <task id="LOCAL-00002" summary="add security initializer">
-      <created>1666889140448</created>
+    <task id="LOCAL-00002" summary="get request realise">
+      <created>1667766493543</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1666889140448</updated>
+      <updated>1667766493543</updated>
     </task>
-    <task id="LOCAL-00003" summary="add security configuration">
-      <created>1666893001379</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1666893001379</updated>
-    </task>
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="f26847f4-3990-40ef-abf2-d2baaddd9f64" name="Changes" comment="add security configuration" />
-      <created>1666893873188</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1666893873188</updated>
-      <workItem from="1666893875174" duration="5713000" />
-      <workItem from="1666963511949" duration="1609000" />
-      <workItem from="1666966787793" duration="575000" />
-      <workItem from="1666967373158" duration="1244000" />
-      <workItem from="1666968631435" duration="2255000" />
-      <workItem from="1666970901666" duration="1911000" />
-      <workItem from="1666972827164" duration="340000" />
-      <workItem from="1667059389476" duration="2108000" />
-      <workItem from="1667061526251" duration="6521000" />
-      <workItem from="1667318915526" duration="681000" />
-      <workItem from="1667498349308" duration="3647000" />
-      <workItem from="1667547435024" duration="166000" />
-      <workItem from="1667548874362" duration="2095000" />
-      <workItem from="1667634525528" duration="901000" />
-      <workItem from="1667643110940" duration="8000" />
-      <workItem from="1667649735677" duration="2827000" />
-      <workItem from="1667670516389" duration="364000" />
-      <workItem from="1667670924778" duration="262000" />
-      <workItem from="1667755360889" duration="71000" />
-    </task>
-    <task id="LOCAL-00004" summary="create authorization demo">
-      <created>1666897608954</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1666897608954</updated>
-    </task>
-    <task id="LOCAL-00005" summary="correct authorization demo">
-      <created>1666899588849</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1666899588849</updated>
-    </task>
-    <task id="LOCAL-00006" summary="add mysql connector java">
-      <created>1666966125233</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1666966125234</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add c3p0">
-      <created>1666966292507</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1666966292507</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add hibernate">
-      <created>1666966610664</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1666966610664</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add spring orm">
-      <created>1666966729744</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1666966729744</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add c3p0">
-      <created>1666967590276</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1666967590276</updated>
-    </task>
-    <task id="LOCAL-00011" summary="fix bug">
-      <created>1666972680925</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1666972680925</updated>
-    </task>
-    <task id="LOCAL-00012" summary="create dataSource method">
-      <created>1667060676877</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1667060676878</updated>
-    </task>
-    <task id="LOCAL-00013" summary="add XlsConvertor">
-      <created>1667549312547</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1667549312547</updated>
-    </task>
-    <task id="LOCAL-00014" summary="add AppDemo">
-      <created>1667564468295</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1667564468295</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,24 +233,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add war_exploded, web initializer" />
-    <MESSAGE value="add security initializer" />
-    <MESSAGE value="add security configuration" />
-    <MESSAGE value="create authorization demo" />
-    <MESSAGE value="correct authorization demo" />
-    <MESSAGE value="add mysql connector java" />
-    <MESSAGE value="add hibernate" />
-    <MESSAGE value="add spring orm" />
-    <MESSAGE value="add c3p0" />
-    <MESSAGE value="fix bug" />
-    <MESSAGE value="create dataSource method" />
-    <MESSAGE value="add XlsConvertor" />
-    <MESSAGE value="add AppDemo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add AppDemo" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <MESSAGE value="get request realise" />
+    <option name="LAST_COMMIT_MESSAGE" value="get request realise" />
   </component>
 </project>

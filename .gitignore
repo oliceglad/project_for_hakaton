@@ -45,11 +45,7 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-<<<<<<< HEAD
-/app/node_modules
-=======
 /node_modules
->>>>>>> b8ae692 (added React-file)
 /.pnp
 .pnp.js
 
